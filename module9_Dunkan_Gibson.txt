@@ -1,0 +1,26 @@
+1.  Table names must be unique within the database, no longer than 30 characters, cannot include spaces or hyphens, and must begin with a letter.
+
+2.  Individual column names and the respective data type must be specified when creating a table?
+
+3.  Unique constraints is used to enforce unique values on individual or a group of columns. A entity integrity constraint this ensures that the first column of a table is NOT NULL. The referential integrity constraint ensures that the values in the foreign key corresponds to values of a primary key.
+
+4.  The difference between TRUNCATE TABLE and DROP TABLE is that TRUNCATE TABLE removes the data from the table while keeping the structure. DROP TABLE moves the table to a recycle bin but does not reclaim the space.
+
+5.  True, the maximum value for a column defined as NUMBER(4,2) is 9999.
+
+6.  True an ALTER TABLE command issues an implicit COMMIT, and cannot be rolled back.
+
+7.  It is false that a constraint must have a name in order for it to be disabled.
+
+8.  CREATE TABLE STUDENT1
+	SELECT STUDENTID, FIRSTNAME, LASTNAME, PHONE
+	FROM student
+
+9.  INSERT INTO STUDENT1
+		(fav_subject, pet, gender)
+	VALUES
+		('HISTORY', 'DOG', 'M')
+
+10.	ALTER TABLE STUDENT1
+	ADD ZIP
+	FROM STUDENT

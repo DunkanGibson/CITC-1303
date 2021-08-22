@@ -1,0 +1,25 @@
+1.  SELECT last_name
+    from instructor
+ WHERE REGEXP_LIKE(last_name, '([a,h])', 'i')
+
+2.  SELECT REGEXP_SUBSTR('701 Briarcliff Ave, Oak Ridge, TN 37931', '701')
+	from DUAL
+
+3.  SELECT REGEXP_INSTR('The classroom is 307 in the building.', '[[:digit:]]{3}')
+		from DUAL
+
+4.  SELECT REGEXP_COUNT('Oracle Database courses offered at Roane State', 'o', 1, 'i')
+		from DUAL
+
+5.  The first portion of the regular expression[[:alpha:]]{4}(-[[:digit:]]{4})?$ is saying that it will match on 4 alpahbetical cahractes. The second portion is matching on a range of 4 digits and will match 0 or 1 times. Two examples that would match the pattern are abcd and abcd1234
+
+6.  SELECT REGEXP_INSTR('Today is a nice day.', 'i?')
+		from DUAL
+
+7.  Two examples that would match the pattern ab{2,4}de are abbde and abbbde.
+
+8.  False
+
+9.  The result of the expression is AB12E
+
+10.  The following SQL statement has the POSIX Class capitalized which makes it invalid. SELECT REGEXPSUBSTR(’ABC10025’, ’[[:ALPHA:]]’)FROM dual

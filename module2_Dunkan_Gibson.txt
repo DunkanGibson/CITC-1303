@@ -1,0 +1,17 @@
+1.  The meanings of 8 and 4 in NUMBER(8,4) are to determine precision and scale where 8 is the precision and 4 is the scale. An example of such a number is 9,999.9999 where the maximum number of digits to the left and right of the decimal is 4.
+2.  No, SQL commands are not case sensitive.
+3.  The names of the tables in the STUDENT schema are COURSE, ENROLLMENT, GRADE, GRADE_CONVERSION, GRADE_TYPE, GRADE_TYPE_WEIGHT, INSTRUCTOR, SECTION, STUDENT, and ZIPCODE.
+4.  The table relationship between COURSE and SECTION is one-to-many.
+5.  The table relationship between GRADE and ENROLLMENT is many-to-one.
+6.  To run multiple SQL statements in SQL developer you need to run the statements as a script by using the Run Script option.
+7.  It is true that the SELECT clause specifies the columns you want to display, and the FROM clause specifies the table that contains these columns.
+8.  To get a list of student IDs, the best table to query is student. This is because the student table contains all pertinent information about students including their unique student ID.  
+9.  SELECT
+    STUDENT_ID,
+    NUMERIC_GRADE
+FROM
+    GRADE;
+10. SELECT 
+    DISTINCT ZIP
+FROM
+   INSTRUCTOR;

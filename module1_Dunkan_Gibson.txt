@@ -1,0 +1,19 @@
+1. Relational databases store data in tables, which are basically structures consisting of columns and rows.
+
+2.  A primary key is used to uniquely identify data within a table.
+
+3.  There are four categories of SQL commands. They are Data Manipulation, Data Definition, Data Control, and Transaction Control. Some examples of SQL commands are Select for Data Manipulation, Alter for Data Definition, Revoke for Data Control, and Commit for Transaction Control.
+
+4.  The first normal form is when a table has all repeating groups removed and placed into new tables.
+
+5.  There are three table relationships in a relational database. They are One-to-Many, One-to-One, and Many-to-Many.
+
+6.  There are five essential phases of relational database development. They are Requirements Analysis, Conceptual Data Model, Logical Design, Physical Design, and Implementation.
+
+7.  A recursive relationship is one in which a column in a table refers to another column in the same table.
+
+8.  It is true that a table should have at least one column.
+
+9.  It is true that you should avoid primary keys that are subject to updates. Having primary keys that are subject to change can introduce unnecessary complexity.
+
+10.  A foreign key is a key used to link together two tables. 

@@ -1,0 +1,58 @@
+1.  It is true that GROUP BY clauses and aggregate functions work hand-in-hand.
+
+2.  It is false that Column aliases can be used in GROUP BY clauses.
+
+3.(a)  When the INSTR function returns a zero it means that the search string does not exist in a particular target string 
+
+  (b)  The output from this SQL statement is 0.
+  
+  (c)  The output from this SQL statement is 1.
+  
+  (d)  The output from this SQL statement is 1.
+  
+  (e)  SELECT COUNT(DISTINCT last_name)
+		FROM student
+		WHERE INSTR(last_name, 'v') > 0 OR INSTR(last_name, 'V') > 0;
+  
+4.(a)  SELECT course_no, COUNT(DISTINCT section_no)
+		FROM section
+		GROUP BY course_no;
+		
+  (b)  SELECT course_no, SUM(capacity) 
+		FROM section
+		GROUP BY course_no;
+		
+  (c)  SELECT course_no, COUNT(DISTINCT section_no)
+		FROM section
+		GROUP BY course_no
+		HAVING COUNT(DISTINCT section_no) >= 4;
+		
+  (d)  SELECT course_no, COUNT(DISTINCT section_id),  SUM(capacity) 
+		FROM section
+		GROUP BY course_no
+		HAVING COUNT(DISTINCT section_id) > 3;
+  
+5.  SELECT AVG(cost)    
+	 FROM course
+	 WHERE prerequisite IS NULL;
+
+6. SELECT  instructor_id, COUNT( DISTINCT section_id)
+	FROM section
+	GROUP BY instructor_id;
+
+7.  SELECT instructor_id, COUNT(DISTINCT section_id)
+	 FROM section
+	 GROUP BY instructor_id
+	 HAVING COUNT(DISTINCT section_id) > 9;
+
+8.  SELECT COUNT(course_no)
+	FROM course
+	WHERE prerequisite is NULL;
+
+9. SELECT COUNT(DISTINCT student_id)
+	FROM enrollment;
+
+10. SELECT student_id, COUNT(DISTINCT section_id)
+	FROM enrollment
+	GROUP BY student_id
+	HAVING COUNT(DISTINCT section_id) >= 2;

@@ -1,0 +1,73 @@
+1.  SELECT course_no, description
+
+	FROM course
+	ORDER BY course_no
+
+2.  SELECT first_name, last_name
+
+	FROM instructor
+	ORDER BY last_name
+
+3.(a)  The data type of column PREREQUISITE in table COURSE is number.
+
+  (b)  Some examples of the data in column PREREQUISITE are 20, 80, and 420.
+  
+  (c)  SELECT course_no, description
+
+	   FROM course
+	   WHERE prerequisite = 20
+	   
+  (d)  SELECT course_no, description
+
+	   FROM course
+	   WHERE prerequisite is null
+  
+4.(a)  The data type of column SALUTATION in table STUDENT is VARCHAR2.
+
+  (b)  Some examples of the data in column SALUTATION are Mr, Rev, and Ms.
+  
+  (c)  SELECT first_name, last_name
+
+	   FROM student
+	   WHERE salutation != 'Dr.'
+  (d)  SELECT first_name, last_name
+
+	   FROM student
+	   WHERE salutation like 'M%'
+  
+5.(a)  SELECT first_name, last_name
+
+	   FROM student
+	   WHERE employer = 'Electronic Engineers'
+  (b)  SELECT first_name, last_name
+
+	   FROM student
+	   WHERE last_name like 'S%'
+  (c)  SELECT first_name, last_name
+
+	   FROM student
+	   WHERE last_name like 'A%'
+	   OR last_name like 'B%'
+  (d)  SELECT first_name, last_name, employer
+
+	   FROM student
+	   WHERE employer = 'Miro Life Insurance'
+	   AND (last_name LIKE 'T%'
+	    OR last_name LIKE 'W%')
+
+6. SELECT zip, city
+
+   FROM zipcode
+   WHERE state = 'NY'
+   ORDER BY zip
+
+
+7.  SELECT course_no, description
+
+	FROM COURSE
+	WHERE cost <= 1095
+
+8.	SELECT first_name, last_name
+
+	FROM student
+	WHERE zip in (07304, 11050, 11226)

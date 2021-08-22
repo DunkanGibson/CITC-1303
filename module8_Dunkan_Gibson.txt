@@ -1,0 +1,10 @@
+1.  An INSERT statement would fail if it does not insert values into the NOT NULL columns or if a parent row cannot be found.
+2.  No, column names required when you insert data into a table.
+3.  The difference between INSERT ALL and INSERT FIRST statements is that INSERT ALL has a conditional and unconditional that can insert data into multiple tables and rows. Whereas the INSERT FIRST evaluates the WHEN clauses in order and if the first condition is true it is inserted and the conditions following are not.
+4.  A statement-level rollback is when an individual statement fails in a series of DML statements and only that statement is rolled back. It does not end a transaction.
+5.  The MERGE command is used to combine INSERT, UPDATE, and DELETE operations.
+6.  A DELETE statement would delete rows from more than one table when the ON DELETE CASCADE option is enabled.
+7.  True, a COMMIT or ROLLBACK command would release locks on rows.
+8.  True a query statement doesn’t place locks on rows.
+9.  An UPDATE statement would affect data in more than one table when the table has a trigger associated with it.
+10. One of the purposes of flashback queries would be to look at values of a query at a specific time in case a user accidentally performs an unintended but committed DML change.
